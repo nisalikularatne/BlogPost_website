@@ -6,16 +6,16 @@
 #
 default: &default
   adapter: postgresql
-  username:postgresq
-  password:NIS23141234KUL
+  username: postgres
+  password: NIS23141234KUL
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
   adapter: postgresql
-  username:postgresq
-  password:NIS23141234KUL
+  username: postgres
+  password: NIS23141234KUL
   database: myrubyblog
 
 # Warning: The database defined as "test" will be erased and
@@ -24,13 +24,13 @@ development:
 test:
   <<: *default
   adapter: postgresql
-  username:postgresq
-  password:NIS23141234KUL
+  username: postgres
+  password: NIS23141234KUL
   database: myrubyblog
 
 production:
   <<: *default
   adapter: postgresql
-  username:postgresq
-  password:NIS23141234KUL
+  username: postgres
+  password: NIS23141234KUL
   database: myrubyblog
